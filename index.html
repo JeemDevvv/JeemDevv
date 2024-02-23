@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css-font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <title>Jeem D.</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <nav id="desktop-nav">
+        <div class="logo">Jeem Dev</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#home">//Home</a></li>
+                <li><a href="#project">//Projects</a></li>
+                <li><a href="#about">//About</a></li>
+                <li><a href="#contact">//Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Jeem Dev</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="togglemenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#home" onclick="togglemenu()">Home</a></li>
+                <li><a href="#project" onclick="togglemenu()">Projects</a></li>
+                <li><a href="#about" onclick="togglemenu()">About</a></li>
+                <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="picko.jpg" alt="Jeem Dev">
+        </div>
+        <div class="section__text">
+            <p class="section__Text__p1">Hello, I'm</p>
+            <h1 class="title">/Jeem Dev/</h1>
+            <p class="section__text__p2">Frontend Developer</p>
+            <div class="btn-container">
+                <button
+                class="btn btn-color-2"
+                onclick="window.open('./assets/resume-example.pdf')">
+                Hire Me!
+              </button>
+              <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                Contact Me!
+              </button>
+            </div>
+            <div id="socials-container">
+                <a href="https://www.instagram.com/imnotgedy_/" target="_blank">
+                    <img src="facebook.png" alt="My Facebook profile" class="icon"></a>                
+                    <a href="https://www.instagram.com/imnotgedy_/" target="_blank">
+                        <img src="instagram.png" alt="My Instagram profile" class="icon"></a>                    
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
